@@ -1,0 +1,93 @@
+# style.css
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f1fd;
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  padding: 15px;
+  text-align: center;
+  color: rgb(166, 242, 255);
+}
+
+nav {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 8px;
+  margin-top: 7px;
+  background-color: #e5e5e5;
+  color: #004080;
+  text-decoration: none;
+}
+
+article {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #004080;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  color: white;
+}
+
+h2.section-title {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: #004080;
+}
+
+.article-photo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width:900px) {
+  nav, article {
+    width: 100%;
+    float: none;
+  }
+}
+```
